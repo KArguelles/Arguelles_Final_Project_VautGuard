@@ -2,7 +2,7 @@
 
 ## I. Project Overview
 
-GuardVault is a personal finance management system that enables users to manage their finances by adding and withdrawing money, setting and tracking goals, and maintaining an emergency fund. The system allows users to create accounts, sign in, manage their balance, and set specific financial goals. It integrates several features that enhance security, such as phone number verification for withdrawals and random name generation for added security.
+**GuardVault** is a personal finance management system that enables users to manage their finances by adding and withdrawing money, setting and tracking goals, and maintaining an emergency fund. The system allows users to create accounts, sign in, manage their balance, and set specific financial goals. It integrates several features that enhance security, such as phone number verification for withdrawals and random name generation for added security.
 
 ### Key Features:
 - **User Account Management**: Create accounts, log in with secure passwords, and view account details.
@@ -16,18 +16,18 @@ GuardVault is a personal finance management system that enables users to manage 
 
 ## II. Explanation of How OOP Principles Were Applied
 
-The GuardVault system makes use of Object-Oriented Programming (OOP) principles such as Encapsulation, Inheritance, Polymorphism, and Abstraction to design and implement the system:
+The **GuardVault** system makes use of Object-Oriented Programming (OOP) principles such as Encapsulation, Inheritance, Polymorphism, and Abstraction to design and implement the system:
 
-### 1. Encapsulation:
+### 1. **Encapsulation**:
 The system encapsulates the user's financial details (balance, emergency fund, transaction history) within the `User` class. Access to these details is controlled through getter methods and internal methods that ensure appropriate updates are made to the data (e.g., withdrawing funds, adding to emergency fund).
 
-### 2. Inheritance:
+### 2. **Inheritance**:
 The `User` class inherits from the `Account` class. The `Account` class handles user authentication (username and password validation) and provides a base structure for account-related operations. The `User` class builds upon this base by adding specific financial operations like managing balance and goals.
 
-### 3. Polymorphism:
+### 3. **Polymorphism**:
 The system demonstrates polymorphism with the abstract method `displayAccountDetails()` in the `Account` class, which is overridden in the `User` class to display user-specific details. This method provides flexibility to extend the system in the future if different account types (e.g., business accounts) are introduced.
 
-### 4. Abstraction:
+### 4. **Abstraction**:
 The `Account` class abstracts common account details (username, password) and user-related operations (authentication). This allows users to interact with the system without needing to understand the underlying implementation of authentication, goal management, or balance management.
 
 ---
@@ -47,3 +47,22 @@ This project is designed with **Sustainable Development Goal (SDG) 1: No Poverty
 
 ### Prerequisites:
 - **Java 8** or higher should be installed on your system.
+
+### Steps to Run:
+
+1. **Compile the Java files**:
+    ```bash
+    javac GuardVault.java
+    ```
+
+2. **Run the program**:
+    ```bash
+    java GuardVault
+    ```
+
+### Interacting with the Program:
+
+Upon running the program, the user will be prompted with a menu to either sign up or log in.
+After logging in successfully, users can access various functionalities such as adding balance, withdrawing funds, setting goals, and more.
+The program uses a simple console interface with color-coded text to provide a user-friendly experience.
+
